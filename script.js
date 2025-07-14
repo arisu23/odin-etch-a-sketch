@@ -8,7 +8,7 @@ resizeGrid.addEventListener("click", () => {
 
   if (!input) return;
 
-  if (!isFinite(input) || size <= 0 || size > 100) {
+  if (!isFinite(input) || input <= 0 || input > 100) {
     alert("Invalid input!");
     return;
   }
